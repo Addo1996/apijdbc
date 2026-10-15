@@ -1,13 +1,14 @@
+
 package com.krakedev.apijdbc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+// Busca los componentes de la aplicación desde com.krakedev.
+@SpringBootApplication(scanBasePackages = "com.krakedev")
 public class ApijdbcApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ApijdbcApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(ApijdbcApplication.class, args);
+    }
 }
